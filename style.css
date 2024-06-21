@@ -1,0 +1,526 @@
+body {
+    overflow-y: scroll;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    ;
+  }
+  .header{
+    background-color: rgb(241, 226, 239);
+  }
+  
+  .head1 {
+    display: grid;
+    grid-template-columns: 35% 41% 24%;
+    padding: 10px 20px;
+    
+  }
+  
+  .logo {
+   width: 220px;
+  }
+  
+  .center-button {
+    padding: 15px 15px;
+    background-color: white;
+    color: rgb(34, 34, 34);
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .button {
+  
+    padding: 15px 15px;
+    background-color: white;
+    color: rgb(34, 34, 34);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .center-button:hover,
+  .button:hover {
+    background-color: rgba(210, 181, 240, 0.8);
+    border-color: white;
+    border-radius: 50px;
+  }
+  .vl1,.vl2, .vl3{
+    content:'';
+    background-color: rgb(210, 181, 240);
+    width: 1px;
+    height:50px;
+    display:inline-block;
+    padding:5px 0 5px;
+  }
+  .user-profile {
+    float: right;
+  }
+  
+  .profile-but {
+    height: 50px;
+    width: 85px;
+    background-color: white;
+    color: rgb(106, 106, 106);
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: medium;
+    margin-bottom:0;
+  }
+  
+  .profile-but:hover {
+    box-shadow: 5px 10px 10px 0 rgba(169, 98, 245, 0.6);
+  }
+  
+  .rectangle {
+    /*grid-template-columns: 250px 150px 150px 300px;*/
+    display: flex;
+    width: 850px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-shadow: 5px 10px 12px 0 rgba(169, 98, 245, 0.8);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+  }
+  
+  .rect-button1 {
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    flex-grow: 1;
+    background-color: white;
+    text-align: left;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+    cursor: pointer;
+   
+  }
+  
+  /* .rect-button4 {
+          
+        height: 50px; 
+        background-color: white;
+        text-align:left;
+      padding-left: 15px;
+      
+      border-top-right-radius: 50px;
+      border-bottom-right-radius:50px;
+      display:flex;
+      justify-content: space-between;
+      
+      border:none;
+      cursor:pointer;}*/
+  .guest:hover,
+  .rect-button1:hover {
+  
+    background-color: rgba(210, 181, 240, 0.8);
+    border: none;
+    box-shadow: 0 3px 12px 0 rgba(210, 181, 240, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 50px;
+  }
+  
+  .choice {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .search {
+    height: 30px;
+  
+    padding-right: 15px;
+    float: right;
+  
+  }
+  
+  .guest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 4px;
+    background-color: white;
+    text-align: left;
+    flex-grow: 2;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(211, 86, 211);
+    color: white;
+    float: right;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .search-icon:hover {
+    background-color: rebeccapurple;
+  }
+  
+  hr.solid {
+    border-top: 1px solid #bbb;
+    margin-top: 20px;
+  }
+  
+  .tax,
+  .filter {
+    width: auto;
+    height: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+  
+  }
+  
+  .tax {
+    padding: 0 16px;
+  }
+  
+  .filter:hover,
+  .tax:hover {
+    background-color: rgba(210, 181, 240,0.8);
+    border-color: black;
+  }
+  
+  .dis-tax {
+  
+    display: flex;
+  }
+  
+  
+  .search-options {
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    column-gap: 8px;
+    contain: strict;
+    display: grid;
+    justify-content: space-evenly;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-row-start: 1;
+    grid-template-columns: 930px 92px 248px;
+    height: 75px;
+    line-break: strict;
+    line-height: 20.02px;
+    overflow-clip-margin: 4px;
+    row-gap: 16px;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+  
+    -webkit-font-smoothing: antialiased;
+  
+  }
+  
+  .scroll-menu {
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 10px;
+  
+  }
+  
+  .scroll-menu-item {
+  
+    width: auto;
+    text-align: center;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    color: #717171;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 20px;
+    /*grid-row: 2;
+    column-gap: 20px;
+    row-gap: 8px;*/
+  }
+  
+  .scroll-menu-item:hover {
+    color: rgb(34, 34, 34);
+  
+  }
+  
+  
+  .scroll-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border: 1px solid #ccc;
+  
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    font: weight 600px;
+    ;
+  }
+  
+  .scroll-arrow:hover {
+    box-shadow: 0 0 10px 1px rgba(169, 98, 245, 0.8);
+    color: rgb(34, 34, 34);
+  }
+  
+  .scroll-arrow-left {
+    left: 10px;
+    top: 40px;
+  }
+  
+  .scroll-arrow-right {
+    left: 920px;
+    top: 40px;
+  }
+  
+  .name {
+    font-size: 12px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 26px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked+.slider {
+    background-color: rgb(34, 34, 34);
+  
+  }
+  
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+    content: "\2714";
+    align-items: center;
+    position: absolute;
+  }
+  
+  .slider:hover {
+    background-color: gray;
+  }
+  
+  .map {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .map-button {
+    padding: 14px 19px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    background-attachment: scroll;
+  
+  }
+  
+  .gallery {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 40px;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(min-content, max-content);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 10px;
+    line-break: strict;
+  
+  }
+  
+  .site {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex: 1 0 300px;
+  
+  }
+  
+  .pic-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .pic {
+    width: 300px;
+    height:300px;
+    border-radius: 12px;
+  }
+  
+  .pic-text {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    width: 280px;
+    padding: 0 10px;
+  }
+  
+  .popularity {
+    /* position:absolute;
+    top:10px;
+    left:10px;*/
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 14px;
+  
+  }
+  
+  .wishlist {
+    background: none;
+    color: white;
+    border: none;
+    width: auto;
+    padding: 0 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  
+  }
+  
+  .wishlist:hover {
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    background: none;
+    width: auto;
+    border-radius: 50px;
+  }
+  
+  .fa-heart {
+    font-size: 24px;
+    fill: rgba(0, 0, 0,0.5);
+    border:white;
+  }
+  
+  .fa-heart:hover {
+    font-size: 26px;
+  }
+  
+  .site-detail {
+    display: grid;
+    grid-template-columns: 240px 50px;
+    grid-template-rows: 19px 19px 19px 25px;
+    column-gap: 8px;
+    row-gap: 2px;
+    font-size: 15px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  
+  }
+  
+  .head {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    font-weight: bold;
+  }
+  
+  .title,
+  .date,
+  .price {
+    display: -webkit-box;
+    color: rgb(106, 106, 106);
+    grid-column-end: -1;
+    grid-column-start: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .rating {
+    grid-column-end: -1;
+    grid-column-start: -2;
+    grid-row-start: 1;
+    grid-row-end: auto;
+    justify-self: end;
+    font-weight: bold;
+  
+  }
+  
+  .rating span {
+    display: flex;
+    column-gap: 4px;
+  }
+  .footer{
+    font-size: 10px;
+    color:grey;
+    margin:20px;
+  }
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
+  

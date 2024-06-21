@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Capella Air Travels | Holiday rentals,cabins, beach houses & more</title>
+	<link rel="icon" type="image/x-icon" href="images/mappinlogo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+	<div class="head1">
+		<img src="images/Capella Air Travels_transparent.png" class="logo">
+
+		<div class="center"><button class="center-button">Stays</button>
+			<button class="center-button">Experiences </button>
+			<button class="center-button">Online Experiences</button>
+		</div>
+
+		<div class="user-profile">
+			<button class="button">CAT your home </button>
+			<button class="button"><i class="fa-solid fa-globe"></i></button>
+			<button class="profile-but">
+				<i class="fa-solid fa-bars "></i>
+				<i class="fa-solid fa-circle-user fa-2xl" style="padding-left:10px"></i></button>
+		</div>
+	</div>
+
+	<div class="rectangle"><button class="rect-button1" id="where"> Where <br>Search destinations</button>
+		<div class="vl1"></div>
+		<button class="rect-button1" id="checkin"> Check in<br> Add dates</button>
+		<div class="vl2"></div>
+		<button class="rect-button1" id="checkout"> Check out<br> Add dates</button>
+		<div class="vl3"></div>
+		<div class="guest"><span class="rect-button4" style="border:none">
+				<div>Who <br> Add guests </div>
+			</span><!--<img src="images/searchicon.png" class="search">-->
+			<div><button class="search-icon"><i class="fa fa-search fa-lg"></i></button></div>
+		</div>
+	</div>
+	<hr class="solid"></div>
+	<div class="search-options">
+		<div>
+			<div class="scroll-arrow scroll-arrow-left"><i class="fa-solid fa-angle-left"></i></div>
+			<div class="scroll-menu">
+				<div class="scroll-menu-item">
+					<i class="fa-solid fa-water"></i>
+					<div class="name"> lake</div>
+					
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-house-chimney"></i>
+					<div class="name"> Amazing pools</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-brands fa-fort-awesome"></i>
+					<div class="name"> Castle</div>
+				</div>
+				<div class="scroll-menu-item"> <i class="fa-solid fa-water-ladder"></i>
+					<div class="name"> Amazing pools</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-mountain"></i>
+					<div class="name"> Hills</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-cloud-sun"></i>
+					<div class="name"> Amazing views</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-archway"></i>
+					<div class="name"> Caves</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-bed"></i>
+					<div class="name"> Rooms</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-umbrella-beach"></i>
+					<div class="name"> Beach</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-fire"></i>
+					<div class="name"> Trending</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-tree"></i>
+					<div class="name"> Tree house</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-hotel"></i>
+					<div class="name"> hotels</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-monument"></i>
+					<div class="name"> iconic city</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-person-swimming"></i>
+					<div class="name"> Surfing</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-mug-hot"></i>
+					<div class="name"> Bed&breakfast</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-brands fa-pagelines"></i>
+					<div class="name"> Amazing pools</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-bowling-ball"></i>
+					<div class="name"> Games</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-wheat-awn"></i>
+					<div class="name"> Farms</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-caravan"></i>
+					<div class="name"> Caravan</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-meteor"></i>
+					<div class="name"> !OMG</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-snowflake"></i>
+					<div class="name"> Arctic</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-campground"></i>
+					<div class="name"> Camping</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-key"></i>
+					<div class="name"> New</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-golf-ball-tee"></i>
+					<div class="name"> Golfing</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-user-chef"></i>
+					<div class="name">Chef Kitchen</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-wine-glass"></i>
+					<div class="name"> Vineyards</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-kitchen-set"></i>
+					<div class="name"> Food</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-person-skiing"></i>
+					<div class="name"> Skiing</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-wheelchair-move"></i>
+					<div class="name"> Adaptive</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-tower-observation"></i>
+					<div class="name">Tower</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-sailboat"></i>
+					<div class="name"> Boat house</div>
+				</div>
+				<div class="scroll-menu-item"><i class="fa-solid fa-palette"></i>
+					<div class="name"> Art</div>
+				</div>
+
+			</div>
+			<div class="scroll-arrow scroll-arrow-right"><i class="fa-solid fa-angle-right"></i></div>
+		</div>
+		<button class="filter"><i class="fa-solid fa-sliders fa-lg"></i>Filters</button>
+		<div class="dis-tax">
+			<button class="tax">Display total before taxes
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider"></span>
+				</label></button>
+		</div>
+	</div>
+	<div class="map">
+		<button class="map-button">Show map <i class="fa-solid fa-map"></i></button>
+	</div>
+	<div class="gallery">
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/lotus-design-n-print-1vMz2_MclrM-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price"><strong>price</strong></div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/leonard-cotte-R5scocnOOdM-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/ole-kloth-ugRn5xeS828-unsplash (1).jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/rahul-chakraborty-dv9AoOYegRc-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/sara-dubler-Koei_7yYtIo-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/johny-goerend-x3WQMj5QkEE-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/ryan-spencer-XGKaRnWjv1c-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/fernando-alvarez-rodriguez-M7GddPqJowg-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price"><strong>price</strong></div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/andre-benz-tPPi0jzLP_w-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/rahul-chakraborty-dv9AoOYegRc-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/leonard-cotte-R5scocnOOdM-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/ryan-spencer-XGKaRnWjv1c-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/ole-kloth-ugRn5xeS828-unsplash (1).jpg" class="pic">
+				<div class="pic-text" >
+					<div class="popularity" >Guest favourite</div>
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="site">
+			<div class="pic-container">
+				<img src="images/lotus-design-n-print-1vMz2_MclrM-unsplash.jpg" class="pic">
+				<div class="pic-text" >
+					
+					<div >
+						<button class="wishlist"><i class='far fa-heart'></i></button></div>
+				</div>
+				
+			</div>
+			<div class="site-detail">
+				<div class="head"><span>city</span>
+
+				</div>
+				<div class="title">title</div>
+				<div class="date">date</div>
+				<div class-="price">price</div>
+				<div class="rating">
+					<span>
+						<div><i class="fa-solid fa-star"></i></div>
+						<div>rating</div>
+					</span>
+
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+	
+	<hr class="solid">
+	<div class="footer">
+		Disclaimer: All the reference images are downloaded from unsplash and the credits are listed down.
+	<br>Photo by <a href="https://unsplash.com/@hckmstrrahul?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Rahul Chakraborty</a> on <a href="https://unsplash.com/photos/turned-off-flat-screen-television-on-white-dresser-dv9AoOYegRc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@lotusdnp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lotus Design N Print</a> on <a href="https://unsplash.com/photos/brown-fabric-sofa-set-1vMz2_MclrM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@ole_kloth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ole Kloth</a> on <a href="https://unsplash.com/photos/a-very-tall-building-with-a-rainbow-painted-on-the-side-of-it-ugRn5xeS828?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@ahungryblonde_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sara Dubler</a> on <a href="https://unsplash.com/photos/photo-of-brown-bench-near-swimming-pool-Koei_7yYtIo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@bugaiova_valeriya?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Valeriia Bugaiova</a> on <a href="https://unsplash.com/photos/a-large-swimming-pool-surrounded-by-palm-trees-_pPHgeHz1uk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@nando0515?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Fernando Álvarez Rodríguez</a> on <a href="https://unsplash.com/photos/blue-body-of-water-in-front-of-building-near-trees-during-nighttime-M7GddPqJowg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@zombience?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ryan Spencer</a> on <a href="https://unsplash.com/photos/santorini-greece-XGKaRnWjv1c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@ettocl?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Léonard Cotte</a> on <a href="https://unsplash.com/photos/bridge-during-night-time-R5scocnOOdM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@johnygoerend?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Johny Goerend</a> on <a href="https://unsplash.com/photos/snow-covered-mountains-near-body-of-water-during-night-time-x3WQMj5QkEE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+	<br>Photo by <a href="https://unsplash.com/@trapnation?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andre Benz</a> on <a href="https://unsplash.com/photos/white-concrete-houses-under-blue-sky-at-daytime-tPPi0jzLP_w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+</div>
+<script >
+	document.addEventListener('DOMContentLoaded', function () {
+    const scrollMenu = document.querySelector('.scroll-menu');
+    const scrollArrowLeft = document.querySelector('.scroll-arrow-left');
+    const scrollArrowRight = document.querySelector('.scroll-arrow-right');
+
+    scrollArrowLeft.addEventListener('click', function () {
+        scrollMenu.scrollBy({
+            left: -700,
+            behavior: 'smooth'
+        });
+    });
+
+    scrollArrowRight.addEventListener('click', function () {
+        scrollMenu.scrollBy({
+            left: 700,
+            behavior: 'smooth'
+        });
+    });
+	$('#where').hover(function(){$('.vl1').hide()}, function(){$('.vl1').show()});
+	$('#checkin').hover(function(){
+		$('.vl1, .vl2').hide();}, function(){$('.vl1, .vl2').show();});
+	$('#checkout').hover(function(){
+		$('.vl2, .vl3').hide();}, function(){$('.vl2, .vl3').show();});
+	$('.guest').hover(function(){
+		$('.vl3').hide();}, function(){$('.vl3').show();});	
+});</script>
+</body>
+
+</html>
